@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="styles.css"> 
+  <title>Spartans Boxing Club</title>
+
+<style>
+.col-container {
+  display: flex;
+  width: 100%;
+}
+.col {
+  flex: 1;
+  padding: 15px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;  
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+<ul>
+  <li class="dropdown">
+    <a class="active" href="index.html" class="dropbtn">Home</a>
+    <div class="dropdown-content">
+      <a href="#aboutus">About Us</a>
+      <a href="#locations">Locations</a>
+    </div>
+  </li>
+  <li><a href="classes.html">Classes</a></li>
+  <li><a href="rates.html">Rates</a></li>
+</ul>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+<div class="header">
+  <img src="sbcbanner2.jpg" style="width: 100%">
+</div>
+
+<div class="w3-container w3-white">
+  <h3 style="text-align: center; font-size: 30px" id="aboutus">About Us</h3>
+    <div class="col-container">
+      <div class="col">
+        <h3 style="text-align: center; font-size: 25px">Boxing Without Bruises</h3>
+        <br>
+        <p style="text-align: center; font-size: 20px">Worried about boxing because you're afraid of injuries? Don't worry, we focus on <strong>safety</strong>! We make sure our exercises and drills are safe and controlled.</p>
+      </div>
+      <div class="col">
+        <img src="sbcnobruises1.jpg" style="width:600px; height:400px">
+      </div>
+    </div>
+
+    <div class="col-container">
+      <div class="col">
+        <img src="sbceveryone.jpg" style="width:600px; height:400px">
+      </div>
+      <div class="col">
+        <h3 style="text-align: center; font-size: 25px">Everyone is welcomed</h3>
+        <br>
+        <p style="text-align: center; font-size: 20px">Whether you're doing it leisurely or you want to fight one day, we welcome you! Training with us at Spartans Boxing Club is like training with your family and friends.</p>
+      </div>
+    </div>
+</div>
+
+    <h3 style="text-align: center; font-size: 30px" id="locations"><br>Locations</h3>
+    <h4 style="text-align: center; font-size: 23px"><u> Central </u></h4>
+    <p style="text-align: center; font-size: 18px"><a href="https://spartansboxing.com/balestier/"> Balestier </a></p>
+      <address style="text-align: center">
+      +65 9189 6218 <br>
+      573 Balestier Road, S329888 <br><br><br>
+      </address>
+    <p style="text-align: center; font-size: 18px"><a href="https://spartansboxing.com/dhoby-ghaut/"> Dhoby Ghaut </a></p>
+      <address style="text-align: center">
+      +65 9233 6151 <br>
+      1 Sophia Road, 03-40 Peace Centre, S228149 <br><br><br>
+      </address>
+    <br>
+    <h4 style="text-align: center; font-size: 23px"><u> North East </u></h4>
+    <p style="text-align: center; font-size: 18px"><a href="https://spartansboxing.com/jalan-kayu/"> Jalan Kayu </a></p>
+      <address style="text-align: center">
+      +65 8874 6814 <br>
+      275 Jalan Kayu, S799503 <br><br><br>
+      </address>
+    <p style="text-align: center; font-size: 18px"><a href="https://spartansboxing.com/serangoon-gardens/"> Serangoon </a></p>
+      <address style="text-align: center">
+      +65 8921 2600 <br>
+      56A Serangoon Gardens Way, S555952 <br><br><br>
+      </address>
+    <br>
+    <h4 style="text-align: center; font-size: 23px"><u> East </u></h4>
+    <p style="text-align: center; font-size: 18px"><a href="https://spartansboxing.com/joo-chiat/"> Joo Chiat </a></p>
+      <address style="text-align: center">
+      +65 9457 7910 <br>
+      393 Joo Chiat Road, S427625 <br><br><br>
+      </address>
+    <p style="text-align: center; font-size: 18px"><a href="https://spartansboxing.com/downtown-east/"> Pasir Ris </a></p>
+      <address style="text-align: center">
+      +65 8699 5560 <br>
+      L5 E!Hub Downtown East, S519599 <br><br><br>
+      </address>
+    <br>
+    <h4 style="text-align: center; font-size: 23px"><u> West </u></h4>
+    <p style="text-align: center; font-size: 18px"><a href="https://spartansboxing.com/jurong-west/"> Jurong West </a></p>
+      <address style="text-align: center">
+      +65 8189 9882 <br>
+      7 Jurong West Ave.5, 02-01, S649486 <br><br><br>
+      </address>
+    <br>
+    <h4 style="text-align: center; font-size: 23px"><u> South </u></h4>
+    <p style="text-align: center; font-size: 18px"><a href="https://spartansboxing.com/buona-vista/"> South Buona Vista </a></p>
+      <address style="text-align: center">
+      +65 9662 7441 <br>
+      30 South Buona Vista, S118160 <br><br><br>
+      </address>
+</div>  
+
+<div class="footer">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color: white; color: black; font-size: 15px">Book a Free Trial</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Book your Free Trial</h1>
+      <p>Fill in this form to alert us of your interest to attend a free trial. Please note that only Basic Boxing classes are open for trial.</p>
+      <hr>
+      <label for="name"><b>Full Name</b></label>
+      <input type="text" placeholder="Enter Full Name" name="name" required>
+ 
+      <label for="phonenumber"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="email" required>      
+ 
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <p>Please check your email over the next few days. We will contact you via email.</p>
+      
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="styles.css">
+  <title>Spartans Boxing Club - Classes</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+</head>
+
+<body>
+
+<ul>
+  <li class="dropdown">
+    <a href="index.html" class="dropbtn">Home</a>
+    <div class="dropdown-content">
+      <a href="#aboutus">About Us</a>
+      <a href="#locations">Locations</a>
+    </div>
+  </li>
+  <li><a class="active" href="classes.html">Classes</a></li>
+  <li><a href="rates.html">Rates</a></li>
+</ul>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+<div class="header">
+  <h2 style="font-size: 50px"><i>Classes</i></h2>
+  <h4>45-minute sweat sesh!</h4>
+  
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color: white; color: black; font-size: 15px">Book a Free Trial</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Book your Free Trial</h1>
+      <p>Fill in this form to alert us of your interest to attend a free trial. Please note that only Basic Boxing classes are open for trial.</p>
+      <hr>
+      <label for="name"><b>Full Name</b></label>
+      <input type="text" placeholder="Enter Full Name" name="name" required>
+ 
+      <label for="phonenumber"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="email" required>      
+ 
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <p>Please check your email over the next few days. We will contact you via email.</p>
+      
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+
+<div class="row">
+<div class="column">
+  <h2>Basic</h2>
+  <img src="sbcbasic.jpg" width=100%>
+  <p>Great for beginners who are looking at the foundations of boxing. Also great for boxers who want to improve the fundamentals before moving on to more complex skills.</p>
+</div>
+  
+<div class="column">
+  <h2>Intermediate</h2>
+  <img src="sbcintermediate.jpg" width=100%>
+  <p>Been attending Basic Boxing classes? Give the Intermediate Boxing classes a go! We teach more complex moves that can be used in fights. Don't worry though, we won't throw the foundations out the window, so you can still work on the basics.</p>
+</div>
+  
+<div class="column">
+  <h2>HIIT</h2>
+  <img src="sbchiit.jpg" width=100%>
+  <p>For those who want a more intense work out (as if boxing alone is not intense enough), we've got you covered. Boxing is incoporated into the circuits and exercises. Some stations could include padwork and punching the bags.</p>
+</div>
+
+<div class="column">
+  <h2>Kids</h2>
+  <img src="sbckids3.jpg" width=100%>
+  <p>Children aged 4 to 11 years can box as well! It's a safe environment, with coaches good with kids to get them interested. Skills are taught through game plays and fun drills.</p>
+</div>
+
+<div class="column">
+  <h2>Ladies</h2>
+  <img src="sbcladies1.jpg" width=100%>
+  <p>A class just for the ladies! Ladies, if you feel shy to box with guys around, or simply prefer an all-female environment, this is the class for you.</p>
+</div>
+
+<div class="column">
+  <h2>Family</h2>
+  <img src="sbcfamily.jpg" width=100%>
+  <p>Ever thought of boxing as a family bonding activity? Well, now it can be! Bring your parent or child for class during the Family Boxing slots. There'll be padwork and you get to partner with your parent or child.</p>
+</div>
+
+<div class="column">
+  <h2>Open Gym</h2>
+  <img src="sbcopengym.jpg" width=100%>
+  <p>This slot is perfect for people who are looking to work on things on their own. The gym (including the bags) will be open to members, and coaches will still be there for you to ask away. Sort of like personal training, but not really. ;)</p>
+</div>
+
+<div class="column">
+  <h2>Sparring</h2>
+  <img src="sbcsparring4.jpg" width=100%>
+  <p>It's not as intense as it sounds. We still very much focus on safety, meaning no going all-out. But you get to step into the ring, wear the head gear and mouth guard, and spar with a fellow member.</p>
+</div>
+
+<div class="column">
+  <h2>Online</h2>
+  <img src="sbconline.png" width=100%>
+  <p>Due to the restrictions on number of people per class due to Covid-19, we conduct online classes for members who are unable to make it for the physical class. No more excuses for skipping your workout! </p>
+</div>
+</div>
+
+<div class="w3-container w3-white">
+  <h3 style="text-align: center; font-size: 30px">Personal Training</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="sbcpt1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="sbcpt2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="sbcsparring3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+  <p style="text-align: center; font-size: 18px">Our wide range of accredited coaches will help you achieve your goals by assisting you to become stronger, healthier or technically more proficient. Our coaches will personally monitor your goals, create a plan for you or co-create one with you, and monitor your progress.</p>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<p style="text-align: center">Before you come for class to start boxing, wrap your hands up! It's serves as a wrist guard and cushion for our knuckles, and we know it can get complicated and confusing, so here's a video on how it's done.</p> 
+<iframe width=700px height=550px src="https://www.youtube.com/embed/yeN_gusrpD4"></iframe>
+
+<div class="footer">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color: white; color: black; font-size: 15px">Book a Free Trial</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Book your Free Trial</h1>
+      <p>Fill in this form to alert us of your interest to attend a free trial. Please note that only Basic Boxing classes are open for trial.</p>
+      <hr>
+      <label for="name"><b>Full Name</b></label>
+      <input type="text" placeholder="Enter Full Name" name="name" required>
+ 
+      <label for="phonenumber"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="email" required>      
+ 
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <p>Please check your email over the next few days. We will contact you via email.</p>
+      
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
